@@ -1,0 +1,89 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Orders</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <h1>Incoming Orders</h1>
+
+    <div id="orderList" class="order-container"></div>
+
+
+    <button id="clearOrders">Clear Orders</button>
+
+    <script src="{{ url_for('static', filename='cafe.js') }}"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Orders</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Incoming Orders</h1>
+    <div id="orderList" class="order-container">
+     
+        <!-- <div class="order-bubble" data-id="1">
+            <div class="order-name">Order 1</div>
+            <div class="order-ingredients">Baguette, Turkey, Cheese</div>
+        </div>
+        <div class="order-bubble" data-id="2">
+            <div class="order-name">Order 2</div>
+            <div class="order-ingredients">Wrap, Ham, Lettuce</div>
+        </div> -->
+       
+    </div>
+    <h1>Finished Orders</h1>
+    <div id="orderList1" class="order-container">
+     
+        <!-- <div class="order-bubble" data-id="1">
+            <div class="order-name">Order 1</div>
+            <div class="order-ingredients">Baguette, Turkey, Cheese</div>
+        </div>
+        <div class="order-bubble" data-id="2">
+            <div class="order-name">Order 2</div>
+            <div class="order-ingredients">Wrap, Ham, Lettuce</div>
+        </div> -->
+       
+    </div>
+<!--Baguette Wrap Cheese Vegetable spread Mayonnaise Barbecue sauce Mustard Sriracha Sweet chilli Turkey Beef Pastrami Salami Prosciutto Chorizo Ham Lettuce Cucumber Tomato Red Onion Gherkin Jalapeno Sweetcorn Bell pepper-->
+    <button id="clearOrders">Clear All Orders</button>
+    <div class="ingredient-container">
+        <label><input type="checkbox" name="ingredient" value="Baguette"> Baguette</label><br>
+        <label><input type="checkbox" name="ingredient" value="Wrap"> Wrap</label><br>
+        <label><input type="checkbox" name="ingredient" value="Cheese"> Cheese</label><br>
+        <label><input type="checkbox" name="ingredient" value="Vegetable spread"> Vegetable spread</label><br>
+        <label><input type="checkbox" name="ingredient" value="Mayonnaise"> Mayonnaise</label><br>
+        <label><input type="checkbox" name="ingredient" value="Barbecue sauce"> Barbecue sauce</label><br>
+        <label><input type="checkbox" name="ingredient" value="Mustard"> Mustard</label><br>
+        <label><input type="checkbox" name="ingredient" value="Sriracha"> Sriracha</label><br>
+        <label><input type="checkbox" name="ingredient" value="Sweet chilli"> Sweet chilli</label><br>
+        <label><input type="checkbox" name="ingredient" value="Turkey"> Turkey</label><br>
+        <label><input type="checkbox" name="ingredient" value="Beef Pastrami"> Beef Pastrami</label><br>
+        <label><input type="checkbox" name="ingredient" value="Salami"> Salami</label><br>
+        <label><input type="checkbox" name="ingredient" value="Prosciutto"> Prosciutto</label><br>
+        <label><input type="checkbox" name="ingredient" value="Chorizo"> Chorizo</label><br>
+        <label><input type="checkbox" name="ingredient" value="Ham"> Ham</label><br>
+        <label><input type="checkbox" name="ingredient" value="Lettuce"> Lettuce</label><br>
+        <label><input type="checkbox" name="ingredient" value="Cucumber"> Cucumber</label><br>
+        <label><input type="checkbox" name="ingredient" value="Tomato"> Tomato</label><br>
+        <label><input type="checkbox" name="ingredient" value="Red Onion"> Red Onion</label><br>
+        <label><input type="checkbox" name="ingredient" value="Gherkin"> Gherkin</label><br>
+        <label><input type="checkbox" name="ingredient" value="Jalapeno"> Jalapeno</label><br>
+        <label><input type="checkbox" name="ingredient" value="Sweetcorn"> Sweetcorn</label><br>
+        <label><input type="checkbox" name="ingredient" value="Bell Pepper"> Bell pepper</label><br>
+    </div>
+    <button id="update">Update</button>
+    <p id="disabled"></p>
+
+    <script src="{{ url_for('static', filename='cafe.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Your Sandwich</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Order Your Sandwich</h1>
+    <form id="orderForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="allergens">Allergens (if any):</label>
+        <input type="text" id="allergens" name="allergens" placeholder="e.g., Nuts, Dairy">
+
+        <h2>Choose Your Ingredients:</h2>
+        <div class="ingredient-container">
+        <label id="Baguette1" class="visible"><input type="checkbox" name="ingredient" value="Baguette" id="Baguette" class="visible"><img src="baguette.png" alt="Baguette" class="ingredient-icon"> Baguette</label><br>
+        <label id="Wrap1" class="visible"><input type="checkbox" name="ingredient" value="Wrap" id="Wrap" class="visible"><img src="tortilla.png" alt="tortilla" class="ingredient-icon"> Wrap</label><br>
+        <label id="Cheese1" class="visible"><input type="checkbox" name="ingredient" value="Cheese"  value="Cheese" id="Cheese" class="visible"><img src="cheese.png" alt="Cheese" class="ingredient-icon"> Cheese</label><br>
+        <label id="Vegetable spread1" class="visible"><input type="checkbox" name="ingredient" value="Vegetable spread" id="Vegetable spread" class="visible"><img src="vegetable.png" alt="Baguette" class="ingredient-icon"> Vegetable spread</label><br>
+        <label id="Mayonnaise1" class="visible"><input type="checkbox" name="ingredient" value="Mayonnaise" id="Mayonnaise" class="visible"><img src="mayonnaise.png" alt="Baguette" class="ingredient-icon"> Mayonnaise</label><br>
+        <label id="Barbecue sauce1" class="visible"><input type="checkbox" name="ingredient" value="Barbecue sauce" id="Barbecue sauce" class="visible"><img src="bbg-sauce.png" alt="Baguette" class="ingredient-icon"> Barbecue sauce</label><br>
+        <label id="Mustard1" class="visible"><input type="checkbox" name="ingredient" value="Mustard" id="Mustard" class="visible"><img src="mustard.png" alt="Baguette" class="ingredient-icon"> Mustard</label><br>
+        <label id="Sriracha1" class="visible"><input type="checkbox" name="ingredient" value="Sriracha" id="Sriracha" class="visible"><img src="sauce.png" alt="Baguette" class="ingredient-icon"> Sriracha</label><br>
+        <label id="Sweet chilli1" class="visible"><input type="checkbox" name="ingredient" value="Sweet chilli" id="Sweet chilli" class="visible"><img src="sweet.png" alt="Baguette" class="ingredient-icon"> Sweet chilli</label><br>
+        <label id="Turkey1" class="visible"><input type="checkbox" name="ingredient" value="Turkey" id="Turkey" class="visible"><img src="turkey.png" alt="Baguette" class="ingredient-icon"> Turkey</label><br>
+        <label id="Beef Pastrami1" class="visible"><input type="checkbox" name="ingredient" value="Beef Pastrami" id="Beef Pastrami" class="visible"><img src="roasted.png" alt="Baguette" class="ingredient-icon"> Beef Pastrami</label><br>
+        <label id="Salami1" class="visible"><input type="checkbox" name="ingredient" value="Salami" id="Salami" class="visible"><img src="salami.png" alt="Baguette" class="ingredient-icon"> Salami</label><br>
+        <label id="Prosciutto1" class="visible"><input type="checkbox" name="ingredient" value="Prosciutto" id="Prosciutto" class="visible"><img src="prosciutto.png" alt="Baguette" class="ingredient-icon"> Prosciutto</label><br>
+        <label id="Chorizo1" class="visible"><input type="checkbox" name="ingredient" value="Chorizo" id="Chorizo" class="visible"><img src="chorizo.png" alt="Baguette" class="ingredient-icon"> Chorizo</label><br>
+        <label id="Ham1" class="visible"><input type="checkbox" name="ingredient" value="Ham" id="Ham" class="visible"><img src="ham.png" alt="Baguette" class="ingredient-icon"> Ham</label><br>
+        <label id="Lettuce1" class="visible"><input type="checkbox" name="ingredient" value="Lettuce" id="Lettuce" class="visible"><img src="lettuce.png" alt="Baguette" class="ingredient-icon"> Lettuce</label><br>
+        <label id="Cucumber1" class="visible"><input type="checkbox" name="ingredient" value="Cucumber" id="Cucumber" class="visible"><img src="cucumber.png" alt="Baguette" class="ingredient-icon"> Cucumber</label><br>
+        <label id="Tomato1" class="visible"><input type="checkbox" name="ingredient" value="Tomato" id="Tomato" class="visible"><img src="tomato.png" alt="Baguette" class="ingredient-icon"> Tomato</label><br>
+        <label id="Red Onion1" class="visible"><input type="checkbox" name="ingredient" value="Red Onion" id="Red Onion" class="visible"><img src="onion.png" alt="Baguette" class="ingredient-icon"> Red Onion</label><br>
+        <label id="Gherkin1" class="visible"><input type="checkbox" name="ingredient" value="Gherkin" id="Gherkin" class="visible"><img src="pickle.png" alt="Baguette" class="ingredient-icon"> Gherkin</label><br>
+        <label id="Jalapeno1" class="visible"><input type="checkbox" name="ingredient" value="Jalapeno" id="Jalapeno" class="visible"><img src="jalapeno.png" alt="Baguette" class="ingredient-icon"> Jalapeno</label><br>
+        <label id="Sweetcorn1" class="visible"><input type="checkbox" name="ingredient" value="Sweetcorn" id="Sweetcorn" class="visible"><img src="food.png" alt="Baguette" class="ingredient-icon"> Sweetcorn</label><br>
+        <label id="Bell Pepper1" class="visible"><input type="checkbox" name="ingredient" value="Bell Pepper" id="Bell Pepper" class="visible"><img src="food-and-restaurant.png" alt="Baguette" class="ingredient-icon"> Bell Pepper</label><br>
+        </div>
+
+        <button type="submit">Place Order</button>
+        <div class="foot">
+            <p class="name">Made by Shanay '26</p>
+        </div>
+    </form>
+
+    <script src="{{ url_for('static', filename='student.js') }}"></script>
+</body>
+</html>
