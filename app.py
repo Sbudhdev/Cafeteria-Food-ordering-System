@@ -94,12 +94,12 @@ def login():
 @app.route('/cafe')
 def cafe():
     if 'user' not in session:
-        print("OOO NOT LOGGED IN ARE WE")  # Strictly check session
+        print("OOO NOT LOGGED IN ARE WE")  
         return redirect(url_for('login')) 
-    print("chill bill") # Force login if not authenticated
+    print("chill bill") 
     print(session)
     session.clear()
-    return render_template('cafe.html')  # Serve cafe page only if logged in
+    return render_template('cafe.html')  
 
 
 @app.route('/logout')
@@ -121,10 +121,10 @@ def logout():
 
 
 # MongoDB Connection
-MONGO_URI = "mongodb+srv://sbudhdev:Black!23=;h@your-sight.zl5ej.mongodb.net/Sandwhich?retryWrites=true&w=majority"
+MONGO_URI = ""
 client = MongoClient(MONGO_URI)
 db = client.Sandwhich  # Database name
-orders_collection = db.sandwich  # Updated collection name
+orders_collection = db.sandwich  
 filters_collection = db.filters
 # ==================== STUDENT SIDE ====================
 # dnlwhqor
@@ -157,8 +157,8 @@ def submit_order():
 
     order = {
         "name": data["name"],
-        "ingredients": data["ingredients"],  # Store ingredients as an array
-        "allergens": data["allergy"]  # Store allergens if provided
+        "ingredients": data["ingredients"], 
+        "allergens": data["allergy"]  
     }
 
     orders_collection.insert_one(order)
@@ -167,7 +167,7 @@ def submit_order():
 
     order = {
         "name": data["name"],
-        "ingredients": data["ingredients"]  # Store ingredients as an array
+        "ingredients": data["ingredients"]  
     }
 
     orders_collection.insert_one(order)
